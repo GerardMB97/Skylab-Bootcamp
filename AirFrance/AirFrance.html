@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirFrance Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form>
+        <fieldset class= "main-container">
+            
+            <input type="text" placeholder="Nombre y apellido" class="adjust-borders first-row--width" required minlength="3" pattern="[a-z A-Z'-]+">
+            <input type="email" placeholder="Email" class="adjust-borders first-row--width" required minlength="6" pattern="^[\w-\.]+@([\w-]+\.)">
+            <input type="tel" placeholder="teléfono" class="adjust-borders first-row--width" required pattern="\d{9}">
+            <select name="trip-type" required class="adjust-borders select--valid-style first-row--width">
+                <option value="1">Ida y vuelta</option>
+                <option value="2">Sólo ida</option>
+                <option value="3">Destinos múltiples</option>
+            </select>
+            <label for="departure adjust-borders" class="plane--no-margin next-rows--width"><i class="fas fa-plane-departure"></i>
+                <select name="departure" class="select--border-adjustment select--valid-style " required>
+                    <option value="" disabled selected hidden>Salida de *</option>
+                    <option value="1">Madrid</option>
+                    <option value="2">Barcelona</option>
+                    <option value="3">Paris</option>
+                    <option value="4">Tolouse</option>
+                    <option value="5">New York</option>
+                    <option value="6">Rabaat</option>
+                    <option value="7">Roma</option>
+            </select>
+        </label>
+        <input type="date" class="adjust-borders next-rows--width" required>
+            <label for="arrival adjust-borders" class="plane--no-margin next-rows--width"><i class="fas fa-plane-arrival"></i>
+                <select name="arrival" class="select--border-adjustment select--valid-style" required>
+                    <option value="" disabled selected hidden>Llegada a *</option>
+                    <option value="1">Madrid</option>
+                    <option value="2">Barcelona</option>
+                    <option value="3">Paris</option>
+                    <option value="4">Tolouse</option>
+                    <option value="5">New York</option>
+                    <option value="6">Rabaat</option>
+                    <option value="7">Roma</option>
+            </select>
+        </label>
+        <input type="date" class="adjust-borders next-rows--width" required>
+            
+            <input type="number" placeholder="pasajeros" class="adjust-borders next-rows--width" required max="20" min="1"> 
+            <select name="class" class="adjust-borders select--valid-style next-rows--width">
+                <option value="1">ECONOMY</option>
+                <option value="2">PREMIUM ECONOMY</option>
+                <option value="3">BUSINESS</option>
+                <option value="4">LA PREMIÈRE</option>
+            </select>
+            <textarea name="requirements" placeholder="Special needs"></textarea>
+            <div class="form-check form-switch switch-container">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Viaje Profesional</label>
+            </div>
+        </fieldset>
+        <input type="submit" value="Buscar Vuelos" class="search-button"></input>
+    </form>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>

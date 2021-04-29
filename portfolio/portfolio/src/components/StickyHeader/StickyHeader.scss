@@ -1,0 +1,98 @@
+@import '../../../public/assets/shared';
+
+main{
+  @include flex(column, center, flex-start);
+}
+.menu{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 70px;
+  font-family: $defaultFont;
+  color: $gray;
+  transition: all .5s;
+  z-index: 120;
+  box-shadow: 0 5px 4px 0 rgba(0, 0, 0, 0.3 );
+  background-color: white;
+}
+
+.container{
+  box-sizing: inherit;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  height: 100%;
+
+   @media (min-width: 768px){
+    max-width: 540px;
+  }
+   @media (min-width: 768px){
+    max-width: 720px;
+  }
+  @media (min-width: 990px){
+    max-width: 960px;
+  }
+
+  .menu__wrapper{
+    @include flex(row, flex-start, center);
+    width: 100%;
+    height: 100%;
+
+    .mobile-menu{
+      cursor: pointer;
+      display: block;
+      outline: none;
+      border: none;
+      background-color: white;
+      font-size: 25px;
+      @media (min-width: 990px){
+        display: none;
+    }
+  }
+
+    nav{
+      width: 100%;
+
+      @media (max-width: 990px){
+        display: none;
+    }
+    }
+
+    ul{
+      @include flex(row, flex-start, center);
+      width: 100%;
+
+      li{
+        cursor: pointer;
+        list-style: none;
+        font-size: 15px;
+        font-weight: 400;
+        margin-right: 5%;
+        position: relative;
+
+        a{
+          text-decoration: none;
+          color: $gray;
+          &:hover{
+           color: $orange;
+            &::after{
+             content:" _";
+             position: absolute;
+             right: -8px;
+           }
+        }
+        
+          
+        }
+
+        
+        
+        }
+      }
+    }
+  }
+
+
+

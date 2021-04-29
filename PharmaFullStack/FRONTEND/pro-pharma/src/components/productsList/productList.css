@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+body {
+  padding: 40px 10px;
+}
+
+.products {
+  width: 50%;
+}
+
+.products .products__list {
+  width: 100%;
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.products .products__list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.products .products__list li .info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.products .products__list li .info .info__name {
+  color: #262727;
+  font-size: 1rem;
+}
+
+.products .products__list li .info .info__price {
+  padding-right: 20px;
+  font-size: 1.1rem;
+}
+
+.products .products__list li button {
+  width: 80px;
+  height: 40px;
+  outline: none;
+  border-radius: 3px;
+  border: none;
+  background-color: #97bf3c;
+}
+
+.products .products__list li button img {
+  width: 80%;
+  height: auto;
+}
+
+.products .products__list li .active {
+  background-color: #97bf3c;
+}
+
+.products .products__list li .unactive {
+  background-color: gray;
+}
+/*# sourceMappingURL=productList.css.map */

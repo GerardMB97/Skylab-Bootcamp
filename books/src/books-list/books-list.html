@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Magazines</title>
+  <link rel="stylesheet" href="books-list.css">
+</head>
+
+<body>
+<header>
+    <h1>TOP MAGAZINES</h1>
+</header>
+
+  <main>
+    <ul class="books"></ul>
+  </main>
+  <script src="../shared/shared.js"></script>
+  <script src="./books-list.js"></script>
+  <script>
+  getInfo(magazinesURL)
+    .then(magazineList => {
+      console.log(magazineList)
+      drawMagazineList(magazineList)
+    })
+  </script>
+</body>
+</html>

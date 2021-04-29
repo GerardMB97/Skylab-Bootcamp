@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hero Detail</title>
+        <link rel="stylesheet" href="../../styles.css">
+        <link rel="stylesheet" href="./hero-detail.css">
+    </head>
+    <body>
+        <section>
+            <h1>Tour of Heroes</h1>
+            <nav>
+                <a href="../dashboard/dashboard.html">Dashboard</a>
+                <a href="../heroes/heroes.html">Heroes</a>
+            </nav>
+
+            <div>
+                <h2 id="hero__title-name"></h2>
+                <div id="hero__id">
+<<<<<<< HEAD
+                    <span>id: {hero.id}
+=======
+                    <span>id:
+>>>>>>> 686be4da6692d7ce13c87cf92ffc176cabb8712c
+                    </span>
+                </div>
+                <div>
+                    <label>name:
+                        <input type="text" id="hero__name" placeholder="name"/>
+                    </label>
+                </div>
+                <button>go back</button>
+                <button>save</button>
+            </div>
+        </section>
+        <div class="picture"></div>
+
+        <section class="biography"></section>
+
+        <section class="graph"></section>
+
+        <script src="../../hero.js"></script>
+        <script src="./hero-detail.js"></script>
+        <script>
+        
+            const heroId = parseIdFromLocation(location);
+
+            const HERO = HEROES.find(hero => hero.id === heroId);
+
+            if(HERO){
+             drawHeroInfo(HERO)
+            }
+
+        
+        
+        </script>
+        <script></script>
+    </body>
+</html>

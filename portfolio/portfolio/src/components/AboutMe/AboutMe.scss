@@ -1,0 +1,34 @@
+@import '../../../public/assets/shared';
+.section{
+  padding: 60px 20px;
+  font-family: $defaultFont ;
+  height: 100%;
+  font-weight: 200;
+  h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+
+  p{
+    font-weight: 300;
+    margin-bottom: 40px;
+  }
+
+  button{
+    @include flex(row,space-around, center);
+    cursor: pointer;
+    outline: none;
+    padding: 0 20px;
+    border-radius: 20px;
+    background-color: $green;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 170px;
+
+    &:hover{
+      background-color: $orange;
+    }
+  }
+  }

@@ -1,0 +1,98 @@
+@import '../../../public/assets/shared';
+.education {
+  margin-top: 60px;
+  margin-bottom: 40px;
+
+  .education__title {
+    color: $green;
+    filter: opacity(0.8);
+    margin-bottom: 30px;
+  }
+
+  .education__timeline{
+    padding-left: 25px;
+    padding-bottom: 50px;
+    border-left: 2px solid $green;
+    position: relative;
+
+    .dot{
+      width: 12px;
+      height: 12px;
+      border: 2px solid $green;
+      border-radius: 50%;
+      background-color: white;
+      position: absolute;
+      left: -7px;
+      top: -5px;
+    }
+    h4{
+      color: $orange;
+      filter: opacity(0.75);
+    }
+    p{
+      margin: 10px 0px;
+      font-size: 15px;
+    }
+
+    .timeline__date{
+      filter: opacity(0.5);
+      font-size: 12px;
+      margin-top: 0px;
+    }
+  }
+}
+
+.skills{
+
+  .skills-container{
+    @include flex(row, space-between, center);
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  
+  .skills__title{
+    color: $green;
+    filter: opacity(0.8);
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .skills__bar{
+    color: white;
+    background-color: $orange;
+  }
+
+  .skill__bar{
+    width: 370px;
+    height: 35px;
+    margin-bottom: 10px;
+
+    @media (max-width: 990px){
+        width: 270px;
+    }
+
+    @media (max-width: 590px){
+        width: 100%;
+    }
+
+    p{
+      @include flex(row, space-between, center);
+      color: $orange;
+      filter: opacity(0.6);
+      margin-bottom: 5px;
+    }
+
+    .progress{
+      width: 100%;
+      background-color: #e9ecef;
+      height: 8px;
+      border-radius: 20px;
+    }
+
+    .progress__bar{
+      height: 8px;
+      background-color: $green;
+      border-radius: 20px;
+    }
+  }
+}

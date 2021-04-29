@@ -1,0 +1,19 @@
+
+*{
+  margin:0px;
+  padding:0px;
+  z-index: 0;
+}
+html {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+}
+

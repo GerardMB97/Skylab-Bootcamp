@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie detail</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="movie-detail.css">
+</head>
+
+<body>
+    <header class="sticky-header mobile--d-none">
+        <div class="sticky-logo">
+            <img src="./Images/UI30_about_us-logo.70c3538baaaa2c6937b498be48c7e456.png" alt="Rakuten Logo">
+            <span>CINEMA</span>
+            <span>FREE</span>
+            <span>SUBSCRIPTION</span>
+            <input type="text" placeholder="Buscar">
+        </div>
+        <div class="register-container">
+            <span class="register--brightness">AYUDA Y DISPOSITIVOS</span>
+            <span>ENTRAR</span>
+            <button>REGISTRARSE</button>
+        </div>
+
+    </header>
+    <section class="detail">
+        <div class="desktop-rounds mobile--d-none">
+            <span><i class="fas fa-play-circle"></i></span>
+            <span><i class="fas fa-thumbtack"></i></span>
+        </div>
+        <div class="detail__rounds d-none">
+            <span></span>
+            <span class="rounds--position"></span>
+            <span class="rounds--brightness">
+                <i class="fas fa-play-circle"></i>
+            </span>
+            <span class="rounds--brightness rounds--position rounds--translate">
+                <i class="fas fa-thumbtack"></i>
+            </span>
+        </div>
+        <div class="detail__title-container">
+            <span class="rate">
+                <img src="./Images/imdb-1594119387.png" alt="">
+                <span>5.7</span>
+            </span>
+            <h3 class="title">Un desmadre de viaje</h3>
+            <button class="watch-button">VER GRATIS CON ANUNCIOS</button>
+        </div>
+    </section>
+
+    <div class="desktop--properties">
+    <nav class="media-icons">
+        <span>
+            <button>
+                <i class="fas fa-eye"></i>
+            </button>
+            <button>
+                <i class="fab fa-twitter"></i>
+            </button>
+            <button>
+                <i class="fab fa-facebook-f"></i>
+            </button>
+            <button>
+                <i class="fab fa-pinterest-p"></i>
+            </button>
+        </span>
+    </nav>
+
+    <section class="detail-content">
+        
+        <div class="movie-info">
+            <span>
+                <i class="fas fa-user-friends"></i>
+                13</span>
+            <span>
+                <i class="fas fa-clock"></i>
+                91 minutos</span>
+            <span>
+                <i class="far fa-calendar"></i>
+                2012</span>
+            <span>
+                <i class="fas fa-flag"></i>
+                Estados Unidos</span>
+            <span>
+                <i class="fas fa-info-circle"></i>
+                Titulo original: Thue guilt trip</span>
+        </div>
+        <p class="synopsis">¡Barbra Streisand y Seth Rogen forman un dúo cómico perfecto cuando se embarcan en la madre
+            de todos los viajes!
+            El plan de Andy de hacer una visita rápida a su madre Joyce, da un giro inesperado cuando siente el impulso
+            de invitarla a su viaje
+            de 8 días y casi 5.000 Kilómetros por todo el país. Cuanto más lejos van, más se sienten unidos y Andy se va
+            dando cuenta de que tienen más en común de lo que jamás hubiera imaginado.
+        </p>
+
+        <div class="languages">
+            <h4> <i class="fas fa-closed-captioning"></i>
+                Idiomas y subtítulos</h4>
+            <div><span class="language language--bold">Audio</span><span
+                    class="language language--bold">Subtítulos</span></div>
+            <div><span class="language">Inglés</span><span class="language">Español</span></div>
+            <div><span class="language">Español</span><span class="language">sin subtítulos</div></span>
+        </div>
+
+        <div class="cast">
+            <h4><i class="fas fa-video"></i> Dirección y reparto</h4>
+            <section class="cast__scrollable">
+                <figure>
+                    <img src="./Images/yvonne-strahovski-1525292894-width170-quality50.jpeg" alt="Yvonne Strahovski">
+                    <figcaption>Yvonne Strahov</figcaption>
+                </figure>
+                <figure>
+                    <img src="./Images/seth-rogen-1525276771-width170-quality50.jpeg" alt="Seth Rogen">
+                    <figcaption>Seth Rogen</figcaption>
+                </figure>
+                <figure>
+                    <img src="./Images/zabryna-guevara-1525300305-width170-quality50.jpeg" alt="Zabryna Guevara">
+                    <figcaption>Zabryna Guevara</figcaption>
+                </figure>
+                <figure>
+                    <img src="./Images/worth-howe-1527303403-width170-quality50.jpeg" alt="Worth Howe">
+                    <figcaption>Worth Howe</figcaption>
+                </figure>
+                <figure>
+                    <img src="./Images/julene-renee-preciado-1525295421-width170-quality50.jpeg"
+                        alt="Julene Renee">
+                    <figcaption>Julene Renee</figcaption>
+                </figure>
+                <figure>
+                    <img src="./Images/robert-curtis-brown-1525305041-width170-quality50.jpeg" alt="Robert Curtis">
+                    <figcaption>Robert Curtis</figcaption>
+                </figure>
+                <figure>
+                    <img src="./Images/barbra-streisand-1525282856-width170-quality50.jpeg" alt="Barbra Streisand">
+                    <figcaption>Barbra Streisand</figcaption>
+                </figure>
+                <figure>
+                    <img src="./Images/danny-pudi-1525311752-width170-quality50.jpeg" alt="Danny Pudi">
+                    <figcaption>Danny Pudi</figcaption>
+                </figure>
+            </div>
+            </section>
+        </div>
+        <div class=desktop--distribution>
+        <div class="scores">
+            <h4><i class="fas fa-star"></i> Puntuación</h4>
+            <div class="circles">
+                <div class="circle-container">
+                    <svg viewBox="0 0 36 36">
+                        <path class="circle" stroke-dasharray="60, 100" d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831" />
+                    </svg>
+                    <span>IMDB</span>
+                </div>
+                <div class="circle-container">
+                    <svg viewBox="0 0 36 36">
+                        <path class="circle circle--yellow" stroke-dasharray="48, 100" d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831" />
+                    </svg>
+                    <span>FilmAffinity</span>
+                </div>
+                <div class="circle-container circle-container--larger">
+                    <svg viewBox="0 0 36 36">
+                        <path class="circle" stroke-dasharray="55, 100" d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831" />
+                    </svg>
+                    <span>The Movie Database</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="genres">
+            <h4><i class="fas fa-theater-masks"></i> Géneros</h4>
+            <span class="genres__icons">
+                <img src="./Images/drama-1591342739.png" alt="Drama icon">
+                <img src="./Images/comedy-1591342725.png" alt="Comedy icon">
+            </span>
+        </div>
+        <div class="gray-div"></div>
+    </div>
+        <div class="related">
+            <h4>Otras películas que te pueden gustar ></h4>
+            <div class="related__scrollable">
+                <div><img src="./Images/parasitos-1580991019-width217-quality80.jpeg" alt="Parasitos"></div>
+                <div><img src="./Images/last-christmas-1580899639-width217-quality80.jpeg" alt="Honest thief"></div>
+                <div><img src="./Images/jeff-y-los-suyos-1558428651-width217-quality80.jpeg" alt="Pinocho"></div>
+                <div><img src="./Images/tenet-1605253278-width217-quality80.jpeg" alt="Tenet"></div>
+                <div><img src="./Images/mulan-2020-1601313907-width217-quality80.jpeg" alt="Mulan"></div>
+                <div><img src="./Images/un-ultimo-favor-1608543863-width217-quality80.jpeg" alt="Un ultimo favor"></div>
+                <div><img src="./Images/the-way-back-1594712315-width217-quality80.jpeg" alt="The way back"></div>
+                <div><img src="./Images/uno-para-todos-1604394524-width217-quality80.jpeg" alt="Uno para todos"></div>
+                <div><img src="./Images/redencion-southpaw-1558457974-width217-quality80.jpeg" alt="Redention southpaw"></div>
+                <div><img src="./Images/los-nuevos-mutantes-1607930255-width217-quality80.jpeg" alt="Los nueve mutantes"></div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <nav class="sticky-icons d-none">
+        <span>
+            <i class="fas fa-home"></i>
+            <p>PORTADA</p>
+        </span>
+        <span>
+            <i class="fas fa-film"></i>
+            <p>CINEMA</p>
+        </span>
+        <span>
+            <i class="fas fa-eye"></i>
+            <p>FREE</p>
+        </span>
+        <span>
+            <i class="fas fa-ticket-alt"></i>
+            <p>SUBSCRIPTION</p>
+        </span>
+        <span>
+            <i class="fas fa-user"></i>
+            <p>ENTRAR</p>
+        </span>
+    </nav>
+
+    <footer>
+        <div class="footer-info d-none">
+        <img src=."Images/rktv-grey-eae681a197.svg" alt="Rakuten logo">
+        <nav class="footer-links">
+            <span>Acerca de Rakkuten</span>
+            <span>Quiénes somos</span>
+            <span>Condiciones de uso</span>
+            <span>Politica de privacidad y cookies</span>
+            <span>Trabaja con nosotros</span>
+        </nav>
+    
+        <span class="company-info">2009 - 20021 &copy Rakuten TV Europe, S.L.U -v1.855.0</span>
+    </div>
+        <div class="desktop-footer mobile--d-none">
+            <h3>Rakuten TV - Tu cine en casa</h3>
+            <p>Rakuten TV proporciona una serie de servicios que ofrecen todo un universo de contenidos en solo unos clics. 
+                                    Disfruta de una verdadera experiencia cinematográfica con los últimos estrenos, servicios de suscripción premium y 
+                                    una serie de canales temáticos gratis, como Movies, Euronews, Kids TV, Viki, Documentaries y Rakuten Stories, un canal que incorpora el contenido original y exclusivo de Rakuten TV.
+            </p>
+            <div class="footer-icons">
+                <span>
+                    <img src="./Images/howitworks-555729f452.svg" alt="Devices icon">
+                    <h4>Cómo funciona</h4>
+                    <p>Rakuten TV es compatible con la mayoria de dispositivos</p>
+                </span>
+                <span>
+                    <img src="./Images/payments-ec797a77da.svg" alt="Payment methods icon">
+                    <h4>Más formas de pago</h4>
+                    <p>Rakuten TV es compatible con PayPal y tarjetas VISA y MasterCard</p>
+                </span>
+                <span>
+                    <img src="./Images/support-cd17a5040b.svg" alt="Information icon">
+                    <h4>Ayuda y soporte</h4>
+                    <p>¿Tienes problemas con nuestros servicios? Ponte en contacto con nosotros</p>
+                </span>
+            </div>
+
+        
+    </div></footer>
+</body>
+
+</html>

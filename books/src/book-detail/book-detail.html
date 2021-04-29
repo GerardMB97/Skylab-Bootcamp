@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magazine Detail</title>
+  <link rel="stylesheet" href="book-detail.css">
+</head>
+<body>
+  <header>
+
+  </header>
+  <main>
+  </main>
+  <script src="../shared/shared.js"></script>
+  <script src="./book-detail.js"></script>
+  <script>getInfo(magazineUrl)
+            .then(magazine => {
+              console.log(magazine);
+              drawMagazineDetail(magazine)
+              
+            })
+        </script>
+</body>
+</html>

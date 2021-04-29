@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="heroes.css">
+</head>
+<body>
+    <h1>Tour of Heroes</h1>
+    <nav>
+        <a href="../dashboard/dashboard.html">Dashboard</a>
+        <a href="#">Heroes</a>
+    </nav>
+
+    <h2>My Heroes</h2>
+
+    <div>
+        <label>
+            Hero name:
+            <input type="text">
+        </label>
+
+        <button>add</button>
+    </div>
+
+    <ul class="heroes"></ul>
+
+    <script src="../../hero.js"></script>
+    <script src="./heroes.js"></script>
+    <script>createHeroesNameBoxes(HEROES)</script>
+</body>
+</html>

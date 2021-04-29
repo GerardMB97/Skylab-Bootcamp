@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;500;700&display=swap');
+
+$defaultFont: 'Roboto Mono', mono-space;
+
+$gray: #555555;
+$green: rgb(26, 188, 156);
+$orange: rgb(231, 76, 60);
+
+@mixin flex($direction, $justify, $align){
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}

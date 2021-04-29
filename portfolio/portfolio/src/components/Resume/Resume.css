@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;500;700&display=swap");
+.education {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.education .education__title {
+  color: #1abc9c;
+  -webkit-filter: opacity(0.8);
+          filter: opacity(0.8);
+  margin-bottom: 30px;
+}
+
+.education .education__timeline {
+  padding-left: 25px;
+  padding-bottom: 50px;
+  border-left: 2px solid #1abc9c;
+  position: relative;
+}
+
+.education .education__timeline .dot {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #1abc9c;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  left: -7px;
+  top: -5px;
+}
+
+.education .education__timeline h4 {
+  color: #e74c3c;
+  -webkit-filter: opacity(0.75);
+          filter: opacity(0.75);
+}
+
+.education .education__timeline p {
+  margin: 10px 0px;
+  font-size: 15px;
+}
+
+.education .education__timeline .timeline__date {
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+  font-size: 12px;
+  margin-top: 0px;
+}
+
+.skills .skills-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.skills .skills__title {
+  color: #1abc9c;
+  -webkit-filter: opacity(0.8);
+          filter: opacity(0.8);
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.skills .skills__bar {
+  color: white;
+  background-color: #e74c3c;
+}
+
+.skills .skill__bar {
+  width: 370px;
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 990px) {
+  .skills .skill__bar {
+    width: 270px;
+  }
+}
+
+@media (max-width: 590px) {
+  .skills .skill__bar {
+    width: 100%;
+  }
+}
+
+.skills .skill__bar p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #e74c3c;
+  -webkit-filter: opacity(0.6);
+          filter: opacity(0.6);
+  margin-bottom: 5px;
+}
+
+.skills .skill__bar .progress {
+  width: 100%;
+  background-color: #e9ecef;
+  height: 8px;
+  border-radius: 20px;
+}
+
+.skills .skill__bar .progress__bar {
+  height: 8px;
+  background-color: #1abc9c;
+  border-radius: 20px;
+}
+/*# sourceMappingURL=Resume.css.map */

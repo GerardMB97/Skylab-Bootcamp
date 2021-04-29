@@ -1,0 +1,184 @@
+/* HeroDetailComponent's private CSS styles */
+:root {
+  --color1: #dbefbc;
+  --color2: #e2fadb;
+  --color3: #cfebdf;
+  --color4: #9bc4cb;
+  --color5: #5f634f;
+  --margin: 20px 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#hero__title-name {
+  margin: 20px 0 0 0;
+  font-size: 24px;
+}
+h1 {
+  padding: 0;
+  margin: 0;
+}
+h2 {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  margin: 10px 0 10px 30px;
+}
+.navigation__container {
+  background-color: var(--color1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: var(--margin);
+}
+label {
+  width: 3em;
+  margin: 0 20px;
+  color: #607d8b;
+  font-weight: bold;
+}
+input {
+  height: 2em;
+  font-size: 1em;
+  margin: 5px 20px;
+  text-indent: 10px;
+}
+button {
+  font-family: Arial, sans-serif;
+  background-color: #eee;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #cfd8dc;
+}
+button:disabled {
+  background-color: #eee;
+  color: #ccc;
+  cursor: auto;
+}
+.hero__container {
+  background: var(--color1);
+  display: flex;
+  flex-direction: column;
+}
+.hero__headboard {
+  display: flex;
+  flex-direction: row;
+  height: 40%;
+}
+.hero__image-container {
+  min-width: 160px;
+  min-height: 240px;
+  object-fit: cover;
+  margin: 10px 10px 0 30px;
+}
+.hero__info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  line-height: 30px;
+  min-width: 20%;
+  margin: var(--margin);
+  margin-left: 10px;
+  font-size: 20px;
+}
+.hero__title-name--small {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+}
+.hero_id,
+.hero__title-name,
+.hero__slug {
+  margin: 0px;
+  padding: 0px;
+}
+.hero__powerstats-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  margin-right: 20px;
+}
+.powerstats {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 100px;
+}
+.stat {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  max-width: 100px;
+  min-width: 100px;
+  height: 100%;
+  border: 1px solid var(--color5);
+}
+/* .circle-container {
+  width: 100px;
+}
+.circle {
+  stroke: #4cc790;
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+.circle--yellow {
+  stroke: #ffe300;
+}
+.circle-container--larger {
+  height: 105px;
+}
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+} */
+.hero__data {
+  display: flex;
+  flex-direction: row;
+  height: 60%;
+}
+.hero__appearance,
+.hero__biography {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 20%;
+}
+ul {
+  list-style-type: none;
+  padding: 0 10px 0 30px;
+}
+li {
+  margin-bottom: 5px;
+}
+.hero__information {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.hero__work-information {
+  display: flex;
+  flex-direction: column;
+  height: 35%;
+  justify-content: flex-start;
+}
+.hero__connections-information {
+  display: flex;
+  flex-direction: column;
+  height: 65%;
+}
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/
+
+

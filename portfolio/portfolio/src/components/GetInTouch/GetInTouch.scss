@@ -1,0 +1,73 @@
+@import '../../../public/assets/shared';
+
+.section--background{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(54deg ,rgba(26, 188, 156, 0.7) 34%,rgba(231, 76, 60, 0.7)), url('../../code.jpg');
+  color: white;
+}
+.contact {
+  @include flex(row, flex-start, flex-start);
+
+   @media (max-width: 600px){
+    @include flex(column, flex-start, flex-start);
+  }
+
+  .contact__info {
+    padding-right: 20px;
+    width: 50%;
+    @media (max-width: 600px){
+    @include flex(column, flex-start, flex-start);
+    padding-left: 40px;
+  }
+
+    dl {
+      margin-top: 0px;
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0;
+      margin-inline-end: 0;
+
+      dd{
+        margin-bottom: 20px;
+      }
+   
+
+      dt{
+        float: left;
+      }
+    }
+  }
+
+  .contact__form{
+    @include flex(column, flex-start, flex-start);
+    width: 100%;
+    padding-left: 30px;
+
+    p{
+      margin-top: 10px;
+    }
+
+    textarea{
+      width: 90%;
+      height: 50px;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      outline: none;
+      color: white;
+      border: 1px solid #f1f1f1;
+      background-color: transparent;
+
+      &::placeholder{
+        color: white;
+      }
+
+      &:last-of-type{
+        height: 120px;
+        text-align: start;
+      }
+    }
+  }
+}

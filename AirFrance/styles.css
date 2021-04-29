@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container{
+    width: 80vw;
+    min-width: 350px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-container *{
+    margin-top: 40px;
+}
+
+.plane--no-margin{
+    margin-top: 0px;
+}
+
+.adjust-borders{
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.select--border-adjustment{
+    width: 276px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+input:valid{
+    border-bottom: 1px solid green;
+}
+
+.select--valid-style:valid{
+    border-bottom: 1px solid green;
+}
+
+.search-button{
+    width: 300px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: #d40504;
+    border: none;
+    border-radius: 5px;
+    color: white
+}
+
+option[value="0"]{
+    display: none;
+}
+
+textarea{
+    width: 300px;
+    height: 80px;
+    padding-left: 5px;
+}
+
+@media screen and (min-width: 800px){
+    body{
+        background-image: url("https://images.pexels.com/photos/2105/flying-people-sitting-public-transportation.jpg?cs=srgb&dl=pexels-skitterphoto-2105.jpg&fm=jpg");
+        background-size: 100%;
+    }
+    .main-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: white;
+    }
+
+    .first-row--width{
+        width: 20%;
+    }
+
+    .next-rows--width{
+        min-width: 300px;
+        width: 40%;
+        max-width: 500px;
+    }
+
+    .large-screen--margins{
+        margin: 0px 40px;
+    }
+
+    .select--border-adjustment{
+        width: 90%;
+    }
+
+    textarea{
+        width: 50%;
+    }
+
+    .switch-container{
+        width: 100%;
+        margin-bottom: 100px;
+        margin-left: 100px;
+    }
+}

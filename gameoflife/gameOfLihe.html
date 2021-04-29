@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Life</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>The Game of life</h1>
+    <div class="board"></div>
+    <div class="buttons">
+    <button onclick="startPlaying()">Play</button>
+    <button onclick="stopPlaying()">Stop</button>
+    <button onclick="randomizer(originalGrid)">Randomizer</button>
+    <button onclick="clearGrid(originalGrid)">Clear</button>
+</div>
+    <script src="./gameoflife.js"></script>
+    <script>paintBoard(originalGrid)
+            paintOnClick(originalGrid)</script>
+</body>
+</html>
